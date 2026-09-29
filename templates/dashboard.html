@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <h1 id="welcome-message">
+            Welcome, {{ username }}!
+        </h1>
+
+        <p>Student Management Dashboard</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Student Profile</h2>
+                <p>View student information</p>
+            </div>
+
+            <div class="card">
+                <h2>Courses</h2>
+                <p>View enrolled courses</p>
+            </div>
+
+            <div class="card">
+                <h2>Results</h2>
+                <p>View academic results</p>
+            </div>
+
+        </div>
+
+        <a href="{{ url_for('logout') }}"
+           id="logout-button"
+           class="logout">
+            Logout
+        </a>
+
+    </div>
+
+</body>
+</html>
