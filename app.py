@@ -12,7 +12,7 @@ app.secret_key = os.environ.get(
 )
 
 DEMO_USERNAME = "student"
-DEMO_PASSWORD = "student123"
+DEMO_PASSWORD = "wrongpassword"
 
 
 @app.route("/")
